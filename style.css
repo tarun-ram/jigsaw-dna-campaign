@@ -1,0 +1,701 @@
+.content>.content-wrap>.grid-container,
+.grid-container.custom-width {
+    max-width: 100%;
+    padding: 0
+}
+.content>.content-wrap,
+.content>.content-wrap>.grid-container>.grid-default {
+    padding: 0
+}
+@media screen and (max-width: 767px) {
+    .content-wrap>.gift-cards {
+        padding: 0
+    }
+}
+/*webkit*/
+/*display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+ 
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;*/
+/*--------------------------------------------------------------
+# FLEX BODY
+--------------------------------------------------------------*/
+
+section.flex-container {
+    display: flex;
+}
+.flex-container section {
+    margin: 8% 0;
+}
+.flex-container section:first-child {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.flex-container section:nth-child(2) {
+    margin-top: 4%;
+    margin-bottom: 0;
+}
+img {
+    width: 100%;
+    display: block;
+    height: auto;
+}
+/*--------------------------------------------------------------
+# HERO
+--------------------------------------------------------------*/
+
+section.main-hero {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 100%;
+    position: relative;
+    height: auto;
+    overflow: hidden;
+    background-color: #fff;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transform: translatez(0);
+    transform: translatez(0);
+}
+div.bgimg {
+    height: 100vh;
+    text-align: center;
+    margin: auto 6px;
+    flex: 1 0 auto;
+    align-self: flex-start;
+    /*z-index: 10;*/
+    
+    overflow: hidden;
+    opacity: 1;
+    -webkit-transform: translatez(0);
+    transform: translatez(0);
+}
+div.bgimg:first-child {
+    background: url(https://jigsaw.btxmedia.com/pws/client/images/homepage/aw17/dna/bg-1-min.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-left: 0;
+    padding-top: 25%;
+    padding-bottom: 25%;
+    -webkit-animation: fadein 3s;
+    -moz-animation: fadein 5s;
+    -ms-animation: fadein 5s;
+    -o-animation: fadein 5s;
+    animation: fadein 5s;
+}
+div.bgimg:nth-child(2) {
+    background: url(https://jigsaw.btxmedia.com/pws/client/images/homepage/aw17/dna/bg-equal-2-min.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding: 0 5%;
+    padding-top: 25%;
+    padding-bottom: 25%;
+    -webkit-animation: fadein 3s;
+    -moz-animation: fadein 5s;
+    -ms-animation: fadein 5s;
+    -o-animation: fadein 5s;
+    animation: fadein 5s;
+}
+div.bgimg:nth-child(3) {
+    background: url(https://jigsaw.btxmedia.com/pws/client/images/homepage/aw17/dna/bg-3-min.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-right: 0;
+    padding-top: 25%;
+    padding-bottom: 25%;
+    -webkit-animation: fadein 3s;
+    -moz-animation: fadein 5s;
+    -ms-animation: fadein 5s;
+    -o-animation: fadein 5s;
+    animation: fadein 5s;
+}
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.main-hero-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+.main-hero-content h2 {
+    font-size: 6vw;
+    padding: 0;
+    margin: 3% 0 0;
+    color: #000;
+    line-height: normal;
+}
+.the-content {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    top: 22%;
+    left: 0;
+    right: 0;
+    text-align: center;
+    /*z-index: 20;*/
+}
+.the-content > div {
+    width: 25%;
+    margin: 0 8%;
+}
+@media all and (max-width: 1200px) {
+    div.bgimg {
+        height: 60vh;
+    }
+}
+@media all and (max-width: 768px) {
+    .main-hero-content h2 {
+        font-size: 70px;
+    }
+    div.bgimg {
+        height: 60vh;
+    }
+    div.bgimg:nth-child(2) {
+        padding: 0;
+        margin-right: 0;
+    }
+    div.bgimg:nth-child(3) {
+        display: none;
+    }
+    .the-content {
+        justify-content: space-around;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .the-content > div {
+        width: 30%;
+        margin: 0;
+    }
+}
+@media all and (max-width: 767px) {
+    .main-hero-content h2 {
+        font-size: 30px;
+    }
+    div.bgimg {
+        height: 52vh;
+    }
+    .the-content > div {
+        width: 38%;
+    }
+    .the-content > div:first-child {
+        margin-right: 1%;
+    }
+    .the-content > div:nth-child(2) {
+        margin-left: 1%;
+    }
+}
+/*--------------------------------------------------------------
+# INTRO COPY
+--------------------------------------------------------------*/
+
+section.intro-section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    position: relative;
+    font-feature-settings: "liga" 0;
+}
+section.intro-section > div {
+    text-align: center;
+    flex-basis: 49%
+}
+section.intro-section h3 {
+    font-size: 4.3vw;
+    font-family: 'FuturaPTMedium-Reg', sans-serif;
+    line-height: normal;
+    text-transform: none;
+    margin: 0;
+}
+section.intro-section p {
+    font-size: 2.8vw;
+    font-family: 'FuturaPTBook-Reg', sans-serif;
+    line-height: normal;
+    ]
+}
+section.intro-section strong {
+    font-family: 'FuturaPTDemi-Reg', sans-serif;
+}
+@media all and (max-width: 768px) {
+    section.intro-section > div {
+        flex-basis: 64%;
+    }
+    section.intro-section h3 {
+        font-size: 26px;
+        margin-bottom: 15px;
+    }
+}
+@media all and (max-width: 767px) {
+    section.intro-section p {
+        font-size: 16px
+    }
+}
+/*--------------------------------------------------------------
+# SECTION 1 - WOMENS
+--------------------------------------------------------------*/
+
+section.section1 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    position: relative;
+}
+section.section1 > div {
+    flex: 0 1 50%;
+}
+section.section1 img {
+    margin-left: 15%;
+}
+section.section1 span {
+    position: absolute;
+    top: 6%;
+    left: 11%;
+    font-size: 3.45vw;
+    font-family: "FuturaPTBook-Reg", sans-serif;
+    line-height: normal
+}
+section.section1 strong {
+    font-family: 'FuturaPTDemi-Reg', sans-serif;
+}
+@media all and (max-width: 768px) {
+    section.section1 {
+        justify-content: flex-start;
+    }
+    section.section1 > div {
+        flex: 0 0 85%;
+    }
+    section.section1 img {
+        margin-left: 5%;
+    }
+    section.section1 span {
+        top: -4%;
+        left: 5%
+    }
+}
+@media all and (max-width: 767px) {
+    section.section1 span {
+        font-size: 16px;
+    }
+}
+/*--------------------------------------------------------------
+# SECTION 2 - MENS
+--------------------------------------------------------------*/
+
+section.section2 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    position: relative;
+}
+section.section2 > div:first-child {
+    flex: 0 1 33.33333333%;
+    position: relative;
+    left: 5.45%;
+    /*padding-top: 23%;*/
+    
+    z-index: 1;
+}
+section.section2 img.img2-1 {
+    padding-top: 70%
+}
+section.section2 > div:nth-child(2) {
+    flex: 0 1 37.5%;
+}
+section.section2 span {
+    position: absolute;
+    top: 6%;
+    left: 15%;
+    font-size: 3.45vw;
+    font-family: "FuturaPTBook-Reg", sans-serif;
+    line-height: normal;
+}
+section.section2 strong {
+    font-family: 'FuturaPTDemi-Reg', sans-serif;
+}
+@media all and (max-width: 768px) {
+    section.section2 > div:first-child {
+        flex: 1 1 33.33333333%;
+    }
+    section.section2 > div:nth-child(2) {
+        flex: 1 1 37.5%;
+    }
+    section.section2 span {
+        left: 24%;
+    }
+}
+@media all and (max-width: 767px) {
+    section.section2 span {
+        font-size: 16px;
+        left: 10%;
+    }
+}
+/*--------------------------------------------------------------
+# SECTION 3 - WOMENS
+--------------------------------------------------------------*/
+
+section.section3 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    position: relative;
+}
+section.section3 > div {
+    flex: 0 1 50%;
+}
+section.section3 span {
+    position: absolute;
+    top: 6%;
+    right: 2%;
+    font-size: 3.45vw;
+    font-family: "FuturaPTBook-Reg", sans-serif;
+    line-height: normal;
+    width: 31%
+}
+section.section3 strong {
+    font-family: 'FuturaPTDemi-Reg', sans-serif;
+}
+@media all and (max-width: 768px) {
+    section.section3 {
+        justify-content: flex-end;
+    }
+    section.section3 > div {
+        flex: 0 1 80%;
+    }
+    section.section3 img {
+        padding-top: 12%;
+        padding-right: 10%
+    }
+    section.section3 span {
+        top: 1%;
+        right: 30%;
+        width: auto;
+    }
+}
+@media all and (max-width: 767px) {
+    section.section3 span {
+        font-size: 16px;
+    }
+}
+/*--------------------------------------------------------------
+# SECTION 4 - KNITWEAR
+--------------------------------------------------------------*/
+
+section.section4 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    position: relative;
+}
+section.section4 > div {
+    flex: 0 1 37.5%;
+    margin-left: 25%
+}
+section.section4 span.caption {
+    position: absolute;
+    top: 6%;
+    left: 9%;
+    font-size: 3.45vw;
+    font-family: "FuturaPTBook-Reg", sans-serif;
+    line-height: normal
+}
+section.section4 strong {
+    font-family: 'FuturaPTDemi-Reg', sans-serif;
+}
+@media all and (min-width: 768px) {
+    .hide-non-mob {
+        display: none
+    }
+}
+@media all and (max-width: 768px) {
+    section.section4 {
+        justify-content: flex-start;
+    }
+    section.section4 > div {
+        flex: 0 1 80%;
+        margin-left: 5%
+    }
+    section.section4 img {
+        padding: 12% 0
+    }
+    section.section4 span.caption {
+        font-size: 16px;
+    }
+    span.mob-caption1 {
+        font-size: 26px;
+        font-family: "FuturaPTBook-Reg", sans-serif;
+        line-height: normal;
+        display: block;
+        position: absolute;
+        top: 3%;
+        left: 8%
+    }
+    span.mob-caption2 {
+        font-size: 26px;
+        font-family: "FuturaPTBook-Reg", sans-serif;
+        line-height: normal;
+        display: block;
+        position: absolute;
+        top: 95%;
+        left: 5%
+    }
+    .hide-mob {
+        display: none;
+    }
+}
+@media all and (max-width: 767px) {
+    span.mob-caption1 {
+        font-size: 16px;
+    }
+    span.mob-caption2 {
+        font-size: 16px;
+    }
+}
+/*--------------------------------------------------------------
+# SECTION 5 - ACCESSORIES
+--------------------------------------------------------------*/
+
+section.section5 {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    position: relative;
+}
+section.section5 > div:first-child {
+    flex: 0 1 33.33333333%;
+    position: relative;
+    padding-top: 10%;
+    margin-right: 5%
+}
+section.section5 > div:nth-child(2) {
+    flex: 0 1 37.5%;
+}
+section.section5 span {
+    font-size: 3.45vw;
+    font-family: "FuturaPTBook-Reg", sans-serif;
+    line-height: normal;
+}
+section.section5 span.caption1 {
+    position: absolute;
+    top: 6%;
+    left: 1%;
+}
+section.section5 span.caption2 {
+    position: absolute;
+    bottom: 10%;
+    right: 5%;
+}
+section.section5 strong {
+    font-family: 'FuturaPTDemi-Reg', sans-serif;
+}
+@media all and (max-width: 768px) {
+    /*section.section5 span {
+		font-size: 16px;
+	}*/
+    
+    section.section5 > div:first-child {
+        order: 1;
+        flex: 0 1 50%;
+        padding-top: 15%;
+        margin-right: 0;
+        position: relative;
+        left: -2.5%
+    }
+    section.section5 > div:nth-child(2) {
+        order: 0;
+        flex: 0 1 45.83333333%;
+        padding-left: 3%;
+        padding-top: 40%
+    }
+    section.section5 span.caption1 {
+        top: 0;
+        left: 49%;
+        width: 46%;
+        text-align: right;
+    }
+    section.section5 span.caption2 {
+        position: absolute;
+        bottom: -10%;
+        right: 0;
+        left: 5%;
+    }
+}
+@media all and (max-width: 767px) {
+    section.section5 span {
+        font-size: 16px;
+    }
+}
+/*--------------------------------------------------------------
+# SECTION 6 - DNA
+--------------------------------------------------------------*/
+
+section.section6 {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+}
+section.section6 span {
+    position: absolute;
+    right: 9%;
+    font-size: 3.45vw;
+    font-family: "FuturaPTBook-Reg", sans-serif;
+    line-height: normal;
+}
+section.section6 > div {
+    flex: 0 0 25%;
+}
+section.section6 img {
+    margin-top: 20%;
+    padding-right: 20%
+}
+section.section6 strong {
+    font-family: 'FuturaPTDemi-Reg', sans-serif;
+}
+@media all and (max-width: 768px) {
+    section.section6 {
+        margin-top: 20%;
+    }
+    section.section6 span {
+        right: 14%;
+    }
+    section.section6 > div {
+        flex: 0 0 30%;
+    }
+}
+@media all and (max-width: 767px) {
+    section.section6 span {
+        font-size: 16px;
+    }
+}
+/*--------------------------------------------------------------
+# CTA GROUP
+--------------------------------------------------------------*/
+
+section.cta-group {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+section.cta-group div {
+    display: inline-flex;
+}
+section.cta-group {
+    margin-top: 0;
+}
+section.cta-group {
+    margin-top: 2.5%;
+}
+section.cta-group a {
+    margin: 0 2.5%
+}
+@media all and (max-width: 768px) {
+    section.cta-group {
+        margin-top: 0;
+        margin-bottom: 12%;
+    }
+    section.cta-group a {
+        display: block;
+        margin: 7.5% 0;
+    }
+    section.cta-group div {
+        display: block;
+    }
+}
+@media all and (max-width: 767px) {
+    section.cta-group > div {
+        flex: 1;
+    }
+    section.cta-group a {
+        margin: 5% 0
+    }
+}
+/*--------------------------------------------------------------
+# GHOST BUTTON
+--------------------------------------------------------------*/
+
+button.ghost {
+    background: transparent;
+    font-size: 16px;
+    line-height: 16px;
+    font-family: "FuturaPTMedium-Reg", sans-serif;
+    font-weight: 400!important;
+    padding: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    min-width: 225px;
+    text-align: center;
+    margin: auto;
+    outline: none
+}
+@media screen and (min-width: 1921px) {
+    button.ghost {
+        font-size: 21px;
+        line-height: 21px;
+        min-width: 340px;
+        padding: 20px
+    }
+}
+@media screen and (min-width: 1024px) and (max-width: 1200px) {
+    button.ghost {
+        min-width: 180px
+    }
+}
+@media screen and (max-width: 767px) {
+    button.ghost {
+        display: block;
+        line-height: 36px;
+        min-width: 95%
+    }
+}
+/*Standard*/
+
+button.ghost-jet {
+    color: #000;
+    border: 2px solid #000
+}
+/*--------------------------------------------------------------
+# PARALLAX
+--------------------------------------------------------------*/
+
+#parallax-wrapper {
+    clear: both;
+    width: 100%;
+}
